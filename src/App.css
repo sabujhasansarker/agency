@@ -44,3 +44,42 @@ img {
   transition: all 400ms;
   margin-bottom: -8px;
 }
+
+/* * navBar * */
+nav {
+  padding: 40px 0px;
+  background: black;
+}
+nav img {
+  width: 115px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: #fff;
+}
+
+li {
+  font-size: 16px;
+  line-height: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: none;
+  padding: 28px 20px 27px 20px;
+}
+a:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background: #00d8ff;
+  bottom: 0px;
+  transition: 0.5s ease;
+  left: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}

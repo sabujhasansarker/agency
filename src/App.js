@@ -1,12 +1,19 @@
 import React from "react";
 import "./App.css";
 import WhoWeAre from "./components/layout/WhoWeAre";
+import Navbar from "./components/layout/Navbar";
+import { BrowserRouter as Route } from "react-router-dom";
+import slider from "./HomePage/slider";
 
 function App() {
   return (
-    <div className="container">
-      <WhoWeAre />
-    </div>
+    <Route>
+      <div className="container">
+        <Navbar />
+        <WhoWeAre />
+        <slider />
+      </div>
+    </Route>
   );
 }
 
