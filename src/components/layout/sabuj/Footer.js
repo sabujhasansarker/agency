@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 col-sm-6">
             <img
               src="https://demo30.atiframe.com/wp-content/uploads/2020/03/Logo_Samura.svg"
               alt=""
@@ -18,7 +18,7 @@ const Footer = () => {
               <li>30 Commercial Road Fratton, Australia</li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-sm-6">
             <h4>Discover</h4>
             <ul className="hover_ul">
               <li>
@@ -35,7 +35,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-sm-6">
             <h4>Information</h4>
             <ul className="hover_ul">
               <li>
@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-sm-6">
             <h4>Newsletter</h4>
             <input type="email" placeholder="Your E-mail" required />
             <i className="fas fa-paper-plane"></i>

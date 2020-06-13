@@ -19,6 +19,7 @@ footer {
   color: #cfcfcf;
   @include tablet() {
     padding-top: 50px;
+    min-height: 130vh;
   }
   .footer_img {
     width: 105px;
