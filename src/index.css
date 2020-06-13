@@ -22,6 +22,11 @@ a {
 }
 .col-md-6 {
   width: 48%;
+}
+.col-md-3 {
+  width: 23%;
+}
+[class*="col-"] {
   margin: 0 1%;
 }
 
@@ -29,5 +34,12 @@ a {
 @media screen and (max-width: 769px) {
   .container {
     max-width: 100%;
+  }
+  [class*="col-md"] {
+    width: 100%;
+    margin: 0;
+  }
+  .row {
+    display: block;
   }
 }
