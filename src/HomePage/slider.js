@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function slider() {
+const Slider = () => {
   return (
     <div>
-      <h1>Hello Sabuj</h1>
-      <h2>jcnjdnkcl</h2>
+      <h1>Hello From Slider Page</h1>
     </div>
   );
-}
+};
+
+export default Slider;
