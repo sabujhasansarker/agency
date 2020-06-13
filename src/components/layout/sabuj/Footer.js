@@ -92,6 +92,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <hr />
+        <p>
+          © 2020 All rights reserved. Developed at
+          <a href="https://secretlab.pw/"> SecretLab</a>, theme
+          <a href="https://secretlab.pw/portfolio/web-design-company-wordpress-theme/">
+            Samura
+          </a>
+          . Build with <a href="https://atiframe.com/">Atiframe</a>.
+        </p>
       </div>
     </footer>
   );

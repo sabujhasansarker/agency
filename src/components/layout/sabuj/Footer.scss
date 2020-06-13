@@ -11,11 +11,30 @@
 }
 
 footer {
+  [class*="col-"] {
+    margin-bottom: 60px;
+  }
+  hr {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background: white;
+    margin-bottom: 40px;
+  }
+  p {
+    text-align: center;
+    color: #898989;
+    font-size: 14px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
   background: #1c1c1c;
-  height: auto;
+  min-height: 60vh;
   padding-top: 140px;
   padding-bottom: 60px;
-  padding-left: 15px;
+  padding: 140px 15px 60px;
   color: #cfcfcf;
   @include tablet() {
     padding-top: 50px;
