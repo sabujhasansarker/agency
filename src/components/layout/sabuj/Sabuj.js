@@ -3,11 +3,7 @@ import React, { Fragment } from "react";
 import WhoWeAre from "./WhoWeAre";
 
 const Sabuj = () => {
-  return (
-    <Fragment>
-      <WhoWeAre />
-    </Fragment>
-  );
+  return <Fragment>{/* <WhoWeAre /> */}</Fragment>;
 };
 
 export default Sabuj;

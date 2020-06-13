@@ -1,5 +1,107 @@
+// * Media Queries
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 footer {
-  background: black;
+  background: #1c1c1c;
   height: auto;
-  padding-top: 30px;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  color: #cfcfcf;
+  @include tablet() {
+    padding-top: 50px;
+  }
+  .footer_img {
+    width: 105px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Anton;
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  ul {
+    padding-top: 27px;
+    list-style: none;
+    li {
+      color: #cfcfcf;
+      font-size: 16px;
+      margin-bottom: 20px;
+      a {
+        transition: 0.5s all;
+        color: #cfcfcf;
+      }
+    }
+  }
+  .hover_ul li a {
+    &:hover {
+      color: #fddd6c;
+      margin-left: 5px;
+      transition: 0.5s all;
+    }
+  }
+  .follow {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    h4 {
+      margin: 0;
+    }
+    .footer_icon {
+      margin-left: 20px;
+      a {
+        color: white;
+        .fab {
+          font-size: 17px;
+          margin: 0px 10px;
+          transition: all 0.4s;
+          &:hover {
+            color: #fddd6c;
+            transition: all 0.4s;
+          }
+        }
+      }
+    }
+  }
+  input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: no-repeat;
+    padding: 10px 0px 10px 5px;
+    width: 160px;
+    color: white;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .fa-paper-plane {
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s all;
+    padding: 6px 0px;
+    &:hover {
+      border: 1px solid #fddd6c;
+      border: 1px solid #fddd6c;
+      padding-right: 30px;
+      padding-left: 30px;
+      transition: 0.5s all;
+    }
+  }
 }
