@@ -1,20 +1,21 @@
 import React from "react";
-import "./App.css";
-import WhoWeAre from "./components/layout/WhoWeAre";
-import Navbar from "./components/layout/Navbar";
 import { BrowserRouter as Route } from "react-router-dom";
-import Footer from "./components/layout/Footer";
 
-function App() {
+// * Components
+import Navbar from "./components/layout/sabuj/Navbar";
+import Footer from "./components/layout/sabuj/Footer";
+import Sabuj from "./components/layout/sabuj/Sabuj";
+
+const App = () => {
   return (
     <Route>
       <div className="container">
         <Navbar />
-        <WhoWeAre />
+        <Sabuj />
       </div>
       <Footer />
     </Route>
   );
-}
+};
 
 export default App;

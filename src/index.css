@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -13,6 +21,39 @@ a {
   text-decoration: none;
   color: unset;
 }
+p {
+  line-height: 28px;
+  margin: 10px 0 25px 0;
+}
+.heading_title {
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border-bottom: 2px solid #1c1c1c;
+}
+.heading {
+  font-family: "Anton";
+  color: #1c1c1c;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  padding-top: 65px;
+}
+
+/* * img * */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* * grid * */
 .container {
   max-width: 1170px;
   margin: auto;
@@ -42,4 +83,11 @@ a {
   .row {
     display: block;
   }
+}
+
+/* * we are work * */
+.we_are .image_1 {
+  display: inline;
+  transition: all 400ms;
+  margin-bottom: -8px;
 }
