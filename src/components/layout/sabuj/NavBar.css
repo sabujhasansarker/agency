@@ -1,8 +1,8 @@
 /* * navBar * */
 nav {
   padding: 40px 0px;
-  background: black;
   color: white;
+  margin-bottom: -150px;
 }
 nav .logo_img {
   width: 115px;
