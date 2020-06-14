@@ -15,6 +15,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1px 1px;
   padding-bottom: 97px;
+  padding-top: 97px;
 
   @include tablet() {
     grid-template-columns: 1fr 1fr;
