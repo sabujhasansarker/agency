@@ -9,10 +9,9 @@ import Sabuj from "./components/layout/sabuj/Sabuj";
 const App = () => {
   return (
     <Route>
-      <div className="container">
-        <Navbar />
-        <Sabuj />
-      </div>
+      <Navbar />
+      {/* Sobar components */}
+      <Sabuj />
       <Footer />
     </Route>
   );
