@@ -2,7 +2,6 @@
 nav {
   padding: 40px 0px;
   color: white;
-  margin-bottom: -150px;
 }
 nav .logo_img {
   width: 115px;
@@ -58,6 +57,9 @@ nav .logo_img {
 
 /* *responsive* */
 @media screen and (max-width: 769px) {
+  .nav_container {
+    width: 100%;
+  }
   .toggle_container {
     display: block;
     text-align: right;
@@ -68,6 +70,7 @@ nav .logo_img {
   }
   nav .logo_img {
     float: left;
+    margin-left: 20px;
   }
   .toggle {
     display: inline-block;
@@ -80,6 +83,11 @@ nav .logo_img {
   }
   .open_nav {
     display: block;
+    background: #1c1c1c;
+    z-index: 5;
+    position: relative;
+    padding: 4px 40px;
+    height: 40vh;
   }
   .open_nav li {
     padding: 15px 0px;

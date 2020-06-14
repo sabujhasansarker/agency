@@ -1,7 +1,8 @@
 .banner {
-  background: url(/static/media/banner.e6175a02.jpeg) 100% 0% no-repeat;
+  background: url("../image/banner.jpeg") 66% 0% no-repeat;
   min-height: 100vh;
   color: white;
+  position: relative;
   .banner_content {
     margin: 0;
     position: absolute;

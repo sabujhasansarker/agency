@@ -1,0 +1,62 @@
+// * Media Queries
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.we_are {
+  img.image_2 {
+    @include tablet() {
+      width: 100%;
+    }
+  }
+  h3 {
+    height: 190px;
+    margin-top: -190px;
+    font-size: 80px;
+    line-height: 190px;
+    font-family: Anton;
+    font-weight: 400;
+    margin-left: 55px;
+  }
+  .footer {
+    @include phone() {
+      display: none;
+    }
+    @include tablet() {
+      margin-bottom: 90px;
+    }
+  }
+  .footer_right {
+    margin-top: -85px;
+    margin-left: 200px;
+    ._ {
+      margin-top: -16px;
+      margin-left: 68px;
+
+      h4 {
+        color: #1c1c1c;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        font-family: Anton;
+        text-transform: capitalize;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    hr {
+      border: none;
+      height: 1px;
+      background: black;
+      width: 60px;
+    }
+  }
+}
