@@ -1,16 +1,22 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 // css
 import "./WeWhere.scss";
 
 import Heading from "../../../utils/Heading";
 
-const WhoWeAre = () => {
+const WhoWeAre = ({ button }) => {
   return (
     <div className="container">
       <div className="we_are">
         <div className="row">
           <div className="col-md-5">
+            {button && (
+              <Fragment>
+                <br />
+                <br />
+              </Fragment>
+            )}
             <Heading align="left">who we are</Heading>
             <p className="bold">
               We are a professional team of developers and web designers with
@@ -24,28 +30,38 @@ const WhoWeAre = () => {
               complexity. From simple landing pages and blogs to complex stores
               and corporate portals.
             </p>
-            <div className="footer">
-              <div className="footer_left">
-                <img
-                  src={require("../../../image/Years of experience.png")}
-                  alt=""
-                  className="image_1"
-                />
-                <h3>12</h3>
+            {button ? (
+              <div className="button">
+                <button>about us</button>
               </div>
-              <div className="footer_right">
-                <hr />
-                <div className="_">
-                  <h4>Years Of Experience</h4>
-                  <p>Since 2008</p>
+            ) : (
+              <div className="footer" data-aos="zoom-in">
+                <div className="footer_left">
+                  <img
+                    src={require("../../../image/Years of experience.png")}
+                    alt=""
+                    className="image_1"
+                  />
+                  <h3>12</h3>
+                </div>
+                <div className="footer_right">
+                  <hr />
+                  <div className="_">
+                    <h4>Years Of Experience</h4>
+                    <p>Since 2008</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
           <div className="col-md-1"></div>
           <div className="col-md-6">
             <img
-              src={require("../../../image/we_work.jpeg")}
+              src={
+                button
+                  ? require("../../../image/aboutImage.jpeg")
+                  : require("../../../image/we_work.jpeg")
+              }
               alt=""
               className="image_2"
             />

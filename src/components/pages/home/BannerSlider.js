@@ -31,12 +31,11 @@ const BannerSlider = () => {
 
   let settings = {
     dots: true,
-    // autoplay: true,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 7000,
     speed: 1000,
     fade: true,
     infinite: true,
-    slidesToShow: 1,
     slidesToScroll: 1,
   };
   return (
@@ -48,8 +47,8 @@ const BannerSlider = () => {
             <div className="slider_content">
               <img src={slider.icon} alt="" className="icon" />
               <h2>
-                {slider.text.split("<br>").map((s) => (
-                  <Fragment>
+                {slider.text.split("<br>").map((s, index) => (
+                  <Fragment key={index}>
                     {s} <br />
                   </Fragment>
                 ))}

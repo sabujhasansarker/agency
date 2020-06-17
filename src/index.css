@@ -17,6 +17,14 @@ span {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Anton;
+}
 a {
   text-decoration: none;
   color: unset;
@@ -53,6 +61,69 @@ img {
 }
 
 /* * button * */
+
+.button button {
+  border-radius: 0px 0px 0px 0px;
+  padding: 18px 60px 18px 60px;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.button button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fddd6c;
+  z-index: -2;
+}
+.button button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #262626;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.button button:hover {
+  color: #fff;
+}
+.button button:hover::before {
+  width: 100%;
+}
+
+.button {
+  width: fit-content;
+  position: relative;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  transition-delay: 1s all;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.button:hover::before {
+  width: 100%;
+  transition-delay: 0.5s;
+  transition: 0.4s ease-in-out;
+  border: 1px solid #fddd6c;
+  left: 10px;
+  top: 10px;
+}
+
+/* * button * */
+
 .btn {
   cursor: pointer;
   color: #1c1c1c;
@@ -86,6 +157,9 @@ button:focus {
 @media (max-width: 768px) {
   .container {
     width: 98%;
+  }
+  .heading {
+    font-size: 40px;
   }
 }
 
