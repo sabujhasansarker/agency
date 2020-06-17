@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
+import BannerSlider from "./BannerSlider";
 
 const HomeIndex = () => {
-  return <div></div>;
+  return (
+    <Fragment>
+      <BannerSlider />
+    </Fragment>
+  );
 };
 
 export default HomeIndex;

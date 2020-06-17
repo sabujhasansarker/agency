@@ -6,7 +6,7 @@ const ContactFrom = () => {
   return (
     <div className="contact_from">
       <Heading align="left">GET IN TOUCH</Heading>
-      <form className="form">
+      <form className="form" onSubmit={(e) => e.preventDefault()}>
         <div className="form_group">
           <input type="text" placeholder="Name" />
         </div>

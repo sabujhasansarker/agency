@@ -73,6 +73,9 @@ img {
   color: white;
   transition: 0.4s all;
 }
+button:focus {
+  outline: none !important;
+}
 
 /* * grid * */
 

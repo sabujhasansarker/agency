@@ -2,6 +2,9 @@
 nav {
   padding: 40px 0px;
   color: white;
+  margin-bottom: -150px;
+  z-index: 99;
+  position: relative;
 }
 nav .logo_img {
   width: 115px;
