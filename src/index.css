@@ -37,7 +37,8 @@ p {
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 0px;
-  border-bottom: 2px solid #1c1c1c;
+  border-bottom: 2px solid;
+  margin-bottom: 80px;
 }
 .heading {
   font-family: "Anton";
@@ -51,7 +52,6 @@ p {
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
-  padding-top: 40px;
 }
 
 /* * img * */
@@ -144,7 +144,8 @@ img {
   color: white;
   transition: 0.4s all;
 }
-button:focus {
+button:focus,
+p:focus {
   outline: none !important;
 }
 
