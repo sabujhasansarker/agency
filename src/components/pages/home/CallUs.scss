@@ -1,0 +1,83 @@
+// * Media Queries
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+.callus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px;
+  @include tablet() {
+    display: block;
+  }
+  .callus_left {
+    background: url(../../../image/callus_left.jpeg);
+    padding: 25% 8% 100px 4%;
+    color: white;
+    text-align: center;
+    background-position: center;
+    h2 {
+      font-family: "Anton";
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 64px;
+      text-transform: uppercase;
+      margin: 20px 0 15px 0;
+    }
+    p {
+      padding: 25px 0;
+    }
+    .botton_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .callus_right {
+    background: #fddd6c
+      url(https://demo30.atiframe.com/wp-admin/admin-ajax.php?action=kc_get_thumbn&type=filter_url&id=%2Fwp-content%2Fuploads%2F2020%2F05%2Fhome1_g.png)
+      bottom right/auto no-repeat scroll;
+    padding: 14% 8% 100px 14%;
+    .h1 {
+      position: relative;
+      min-height: 140px;
+      margin-bottom: 80px;
+      h1 {
+        color: #fff0 !important;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+        -webkit-text-stroke: 1px #1c1c1c;
+        font-size: 400px;
+        margin-bottom: -80px;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+
+    h2 {
+      font-size: 56px;
+      text-transform: uppercase;
+      line-height: 64px;
+      padding-right: 25%;
+      margin: 20px 0 15px 0;
+      font-weight: 400;
+    }
+    .footer_text {
+      margin-top: 70px;
+      h4 {
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+        font-family: Anton;
+        text-align: left;
+        text-transform: none;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

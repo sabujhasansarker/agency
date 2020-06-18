@@ -12,17 +12,18 @@
 .testimonials {
   color: white;
   position: relative;
-  min-height: 130vh;
+  min-height: 160vh;
+  padding: 100px 0px;
   .t_background {
     position: relative;
-    height: 80vh;
+    height: 130vh;
   }
   .heading_title {
     border-bottom: 2px solid;
   }
   .container {
     position: absolute;
-    top: 150px;
+    top: 250px;
     left: 0;
     right: 0;
   }
