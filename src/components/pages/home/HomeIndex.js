@@ -9,6 +9,7 @@ import Testimonials from "../../layout/sabuj/Testimonials";
 import CallUs from "./CallUs";
 import Count from "./Count";
 import Experience from "./Experience";
+import Team from "../../layout/sabuj/Team";
 
 const HomeIndex = () => {
   return (
@@ -20,6 +21,7 @@ const HomeIndex = () => {
       <Experience />
       <CallUs />
       <Testimonials background={true} />
+      <Team />
       <Work />
     </Fragment>
   );
