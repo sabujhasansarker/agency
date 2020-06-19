@@ -25,7 +25,8 @@ span {
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.arrow_top {
+.arrow {
+  transition: 1s all;
   position: fixed;
   bottom: 50px;
   right: 10%;
@@ -44,9 +45,20 @@ span {
   justify-content: center;
   display: flex;
 }
-a.arrow_top.aos-init.aos-animate {
+a.exit_arrow.aos-animate {
+  width: 0px;
+  height: 0px;
+  transition: 1s all;
+}
+a.arrow_top.arrow.aos-animate {
   width: 60px;
   height: 60px;
+  display: flex;
+  transition: 1s all;
+}
+a.exit_arrow.aos-animate svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
+  width: 0;
+  transition: 1s all;
 }
 svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
   width: 20px;
