@@ -1,0 +1,63 @@
+// * Media Queries
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.home_count {
+  width: 100%;
+  background: url(../../../image/bg_count_.jpg) center center/cover no-repeat
+    scroll;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin: 50px 0px;
+  color: white;
+  h1 {
+    float: left;
+    color: #fff0 !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px #fff;
+    font-size: 80px;
+    line-height: 120px;
+    font-weight: 400;
+    span {
+      font-family: Anton;
+    }
+    @include tablet() {
+      display: block;
+      text-align: center;
+      float: unset;
+    }
+  }
+
+  p {
+    color: #ffffff;
+    text-align: right;
+    width: 180px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+    float: right;
+    @include tablet() {
+      display: block;
+      text-align: center;
+      float: unset;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 50px;
+    @include phone() {
+      grid-template-columns: 1fr;
+    }
+  }
+}

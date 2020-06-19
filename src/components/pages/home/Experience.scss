@@ -1,0 +1,28 @@
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+.home_exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+  @include tablet() {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .home_exp_left {
+    background: url(../../../image/exp.jpeg) 212% 0%;
+    background-repeat: no-repeat;
+    @include tablet() {
+      display: none;
+    }
+  }
+  .exp_content {
+    width: 70%;
+    @include tablet() {
+      width: unset;
+    }
+  }
+}

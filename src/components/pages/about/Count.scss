@@ -1,0 +1,47 @@
+// * Media Queries
+@mixin phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.about_count {
+  width: 100%;
+  color: white;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 50px;
+    background: #1c1c1c;
+    margin-bottom: -120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .count_item {
+      border-right: 1px solid #463f24;
+      h1 {
+        color: #fddd6c;
+        font-size: 80px;
+        line-height: 120px;
+        font-weight: 400;
+        span {
+          font-family: Anton;
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+    @include phone() {
+      grid-template-columns: 1fr;
+    }
+  }
+}

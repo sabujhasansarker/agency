@@ -17,6 +17,15 @@ span {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Anton;
+  font-weight: 400;
+}
 a {
   text-decoration: none;
   color: unset;
@@ -28,12 +37,12 @@ p {
 .heading_title {
   padding-right: 15px;
   padding-bottom: 5px;
-  padding-left: 15px;
-  border-bottom: 2px solid #1c1c1c;
+  padding-left: 0px;
+  border-bottom: 2px solid;
+  margin-bottom: 80px;
 }
 .heading {
   font-family: "Anton";
-  color: #1c1c1c;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -44,7 +53,6 @@ p {
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
-  padding-top: 65px;
 }
 
 /* * img * */
@@ -53,6 +61,167 @@ img {
   max-width: 100%;
 }
 
+/* * button * */
+
+.button button,
+.button .btn_1 {
+  border-radius: 0px 0px 0px 0px;
+  padding: 18px 60px 18px 60px;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.button button::after,
+.button .btn_1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fddd6c;
+  z-index: -2;
+}
+.button button::before,
+.button .btn_1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #262626;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.button button:hover,
+.button .btn_1:hover {
+  color: #fff;
+}
+.button button:hover::before,
+.button .btn_1:hover::before {
+  width: 100%;
+}
+
+.button {
+  width: fit-content;
+  position: relative;
+  padding: 18px 0;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  transition-delay: 1s all;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.button:hover::before {
+  width: 100%;
+  transition-delay: 0.5s;
+  transition: 0.4s ease-in-out;
+  border: 1px solid #fddd6c;
+  left: 10px;
+  top: 10px;
+}
+
+/* * button * */
+
+.btn {
+  cursor: pointer;
+  color: #1c1c1c;
+  background: #fddd6c;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: lowercase;
+  border: none;
+  height: 50px;
+  padding-right: 55px;
+  padding-left: 55px;
+  transition: 0.4s all;
+}
+.btn:hover {
+  background: #3e3e3e;
+  color: white;
+  transition: 0.4s all;
+}
+button:focus,
+p:focus {
+  outline: none !important;
+}
+
+/* * exp * */
+.exp_slide_container {
+  padding-top: 40px;
+}
+.about_skill h4,
+.home_exp h4 {
+  font-family: Anton;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.count_number {
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
+.count_number p {
+  margin: 0;
+}
+.count_number [data-aos="exp_count_exm"] {
+  width: 0;
+  opacity: 0;
+  transition-property: width, opacity;
+}
+.count_number .line_container {
+  width: 100%;
+  overflow: hidden;
+  height: 5px;
+  background: #e4e4e4;
+}
+.count_number .line {
+  height: 100%;
+  background: #fddd6c;
+}
+
+.count_number .line.aos-animate {
+  opacity: 1;
+}
+.count_number .line_60.aos-animate {
+  width: 60%;
+}
+.count_number .line_80.aos-animate {
+  width: 80%;
+}
+.count_number .line_90.aos-animate {
+  width: 90%;
+}
+
+.count_number [data-aos="exp_count_margin"] {
+  margin-left: 0;
+  opacity: 0;
+  transition-property: margin-left, opacity;
+}
+
+.count_number p.margin {
+  opacity: 1;
+}
+.count_number p.margin_80.margin.aos-init.aos-animate {
+  margin-left: 80%;
+}
+.count_number p.margin_60.margin.aos-init.aos-animate {
+  margin-left: 60%;
+}
+.count_number p.margin_90.margin.aos-init.aos-animate {
+  margin-left: 90%;
+}
 /* * grid * */
 
 .container {
@@ -63,11 +232,14 @@ img {
   .container {
     width: 98%;
   }
+  .heading {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1024px;
+    width: 1170px;
   }
 }
 .container-fluid {
