@@ -13,6 +13,9 @@
 .we_are {
   min-height: 70vh;
   padding: 00px 0 150px 0px;
+  @include tablet() {
+    padding-bottom: 0;
+  }
   img.image_2 {
     margin-bottom: 150px;
 

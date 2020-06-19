@@ -29,6 +29,10 @@
     top: 250px;
     left: 0;
     right: 0;
+    @include phone() {
+      top: unset;
+      bottom: 50px;
+    }
   }
   .testimonial_container {
     position: relative;

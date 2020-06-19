@@ -13,6 +13,7 @@
   padding: 100px 0px;
   @include tablet() {
     display: block;
+    padding: 0;
   }
   .callus_left {
     background: url(../../../image/callus_left.jpeg);

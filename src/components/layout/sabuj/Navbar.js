@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./NavBar.css";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [state, setState] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 600;
+      if (isTop !== true) {
+        setState(true);
+      } else setState(false);
+    });
+  }, []);
   return (
-    <nav>
+    <nav className={`${state && "fixed_nav"}`}>
       <div className="nav_container">
         <Link to="/">
           <img

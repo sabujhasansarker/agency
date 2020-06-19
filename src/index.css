@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +19,37 @@ p,
 span {
   margin: 0;
   padding: 0;
+}
+#root {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.arrow_top {
+  position: fixed;
+  bottom: 50px;
+  right: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: alpha(opacity=50);
+  color: #ffffff;
+  transition: all 500ms;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1050;
+  transform: scale(1);
+  opacity: 0.5;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+a.arrow_top.aos-init.aos-animate {
+  width: 60px;
+  height: 60px;
+}
+svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
+  width: 20px;
 }
 h1,
 h2,
