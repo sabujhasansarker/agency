@@ -11,7 +11,7 @@
 }
 
 .we_are {
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 00px 0 150px 0px;
   img.image_2 {
     margin-bottom: 150px;
@@ -66,6 +66,7 @@
   }
   .button {
     margin-top: 60px;
+    margin-bottom: 60px;
   }
   .button:hover::before {
     border: 1px solid #262626;

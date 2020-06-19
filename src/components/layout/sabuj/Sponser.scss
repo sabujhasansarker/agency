@@ -11,29 +11,32 @@
 }
 
 .sponser {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 1px 1px;
-  padding-bottom: 97px;
-  padding-top: 97px;
+  padding: 50px 0px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    padding-bottom: 97px;
+    padding-top: 97px;
 
-  @include tablet() {
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 1px;
-  }
-  @include phone() {
-    grid-template-columns: 1fr;
-  }
-  img {
-    margin: 0 auto;
-    text-align: center;
-  }
-  .lest_img {
     @include tablet() {
-      margin-left: 80%;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px 1px;
     }
     @include phone() {
+      grid-template-columns: 1fr;
+    }
+    img {
       margin: 0 auto;
+      text-align: center;
+    }
+    .lest_img {
+      @include tablet() {
+        margin-left: 80%;
+      }
+      @include phone() {
+        margin: 0 auto;
+      }
     }
   }
 }

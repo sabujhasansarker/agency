@@ -4,8 +4,8 @@ import "./Sponser.scss";
 
 const Sponser = () => {
   return (
-    <div className="container">
-      <div className="sponser">
+    <div className="sponser">
+      <div className="container">
         <img src={require("../../../image/sponser/1.png")} alt="" />
         <img src={require("../../../image/sponser/2.png")} alt="" />
         <img src={require("../../../image/sponser/3.png")} alt="" />

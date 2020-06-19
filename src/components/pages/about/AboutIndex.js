@@ -7,6 +7,7 @@ import Testimonials from "../../layout/sabuj/Testimonials";
 import Skill from "./Skill";
 import Count from "./Count";
 import Team from "../../layout/sabuj/Team";
+import Call from "./Call";
 
 const AboutIndex = () => {
   return (
@@ -16,6 +17,7 @@ const AboutIndex = () => {
       <Count />
       <Skill />
       <Team />
+      <Call />
       <Testimonials />
       <Sponser />
     </Fragment>
