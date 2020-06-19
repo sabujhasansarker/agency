@@ -93,7 +93,7 @@ const Testimonials = ({ background }) => {
                   </div>
                 </div>
                 <p>{client.comment}</p>
-                {client.rating == 1 && (
+                {client.rating === 1 && (
                   <Fragment>
                     <img
                       src={require("../../../image/reating.png")}
@@ -122,7 +122,7 @@ const Testimonials = ({ background }) => {
                     />
                   </Fragment>
                 )}
-                {client.rating == 2 && (
+                {client.rating === 2 && (
                   <Fragment>
                     <img
                       src={require("../../../image/reating.png")}
@@ -151,7 +151,7 @@ const Testimonials = ({ background }) => {
                     />
                   </Fragment>
                 )}
-                {client.rating == 3 && (
+                {client.rating === 3 && (
                   <Fragment>
                     <img
                       src={require("../../../image/reating.png")}
@@ -180,7 +180,7 @@ const Testimonials = ({ background }) => {
                     />
                   </Fragment>
                 )}
-                {client.rating == 4 && (
+                {client.rating === 4 && (
                   <Fragment>
                     <img
                       src={require("../../../image/reating.png")}
@@ -209,7 +209,7 @@ const Testimonials = ({ background }) => {
                     />
                   </Fragment>
                 )}
-                {client.rating == 5 && (
+                {client.rating === 5 && (
                   <Fragment>
                     <img
                       src={require("../../../image/reating.png")}

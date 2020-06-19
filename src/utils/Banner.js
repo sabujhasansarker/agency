@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Banner.scss";
-import Navbar from "../components/layout/sabuj/Navbar";
 
 const Banner = ({ children }) => {
   return (

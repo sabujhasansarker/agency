@@ -6,10 +6,10 @@ const Call = () => {
   return (
     <div className="service_call">
       <div className="container">
-        <a class="tel" href="tel:01948256275" target="_self">
+        <a className="tel" href="tel:01948256275" target="_self">
           <span>
             <strong>
-              <i class="fas fa-phone-alt"></i>
+              <i className="fas fa-phone-alt"></i>
             </strong>
           </span>
         </a>

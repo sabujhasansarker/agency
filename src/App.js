@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 // * Components
 import Navbar from "./components/layout/sabuj/Navbar";
 import Footer from "./components/layout/sabuj/Footer";
-import Sabuj from "./components/layout/sabuj/Sabuj";
 import HomeIndex from "./components/pages/home/HomeIndex";
 import ServiceIndex from "./components/pages/service/ServiceIndex";
 import AboutIndex from "./components/pages/about/AboutIndex";
