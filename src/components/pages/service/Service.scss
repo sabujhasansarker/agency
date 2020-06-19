@@ -1,0 +1,41 @@
+.services {
+  padding: 50px 0px;
+  .service_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 50px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 599px) {
+      grid-template-columns: 1fr;
+      width: 90%;
+      margin: 0 auto;
+    }
+    h4 {
+      color: #1c1c1c;
+      font-size: 26px;
+      line-height: 32px;
+      font-weight: 400;
+      font-family: Anton;
+      text-transform: none;
+      text-decoration: none;
+      padding-top: 15px;
+    }
+    p {
+      padding-top: 10px;
+      padding-right: 15%;
+      padding-bottom: 25px;
+    }
+    .card_item {
+      background: whitesmoke;
+      padding-top: 60px;
+      padding-left: 40px;
+      &:hover {
+        background: #fddd6c;
+        transition: 1s all;
+      }
+    }
+  }
+}
