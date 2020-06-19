@@ -62,6 +62,7 @@ a.exit_arrow.aos-animate svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
 }
 svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
   width: 20px;
+  transition: 1s all;
 }
 h1,
 h2,
