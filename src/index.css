@@ -63,7 +63,8 @@ img {
 
 /* * button * */
 
-.button button {
+.button button,
+.button .btn_1 {
   border-radius: 0px 0px 0px 0px;
   padding: 18px 60px 18px 60px;
   border: none;
@@ -74,7 +75,8 @@ img {
   z-index: 1;
   cursor: pointer;
 }
-.button button::after {
+.button button::after,
+.button .btn_1::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -84,7 +86,8 @@ img {
   background-color: #fddd6c;
   z-index: -2;
 }
-.button button::before {
+.button button::before,
+.button .btn_1::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -95,16 +98,19 @@ img {
   transition: all 0.3s;
   z-index: -1;
 }
-.button button:hover {
+.button button:hover,
+.button .btn_1:hover {
   color: #fff;
 }
-.button button:hover::before {
+.button button:hover::before,
+.button .btn_1:hover::before {
   width: 100%;
 }
 
 .button {
   width: fit-content;
   position: relative;
+  padding: 18px 0;
 }
 .button::before {
   content: "";

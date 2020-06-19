@@ -13,7 +13,9 @@ const CallUs = () => {
         </p>
         <div className="botton_container">
           <div className="button">
-            <button>call now</button>
+            <a className="btn_1" href="tel:01948256275" target="_self">
+              call me
+            </a>
           </div>
         </div>
       </div>

@@ -1,0 +1,67 @@
+.service_call {
+  padding: 50px 0px;
+  margin: 50px 0pc;
+  margin-bottom: 100px;
+  background: url(../../../image//callme.jpeg) center center/cover no-repeat
+    scroll;
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  color: white;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .tel {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-right: 100px;
+    span {
+      width: 160px;
+      height: 160px;
+      border: 1px solid #7f7f7f;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ffffff;
+        padding: 8px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          color: #fddd6c;
+          border: 1px solid #fddd6c;
+          transition: 0.5s all;
+        }
+      }
+      &:hover {
+        border: 1px solid rgba(253, 221, 108, 0.5);
+        transition: 0.75s all;
+      }
+    }
+    &:hover {
+      border: 1px solid rgba(253, 221, 108, 0.2);
+      transition: 1s all;
+    }
+  }
+  h2 {
+    font-size: 52px;
+    margin-bottom: 50px;
+    span {
+      font-family: Anton;
+      color: #fddd6c;
+    }
+  }
+}

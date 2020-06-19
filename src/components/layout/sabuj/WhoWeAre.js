@@ -4,6 +4,7 @@ import React, { Fragment } from "react";
 import "./WeWhere.scss";
 
 import Heading from "../../../utils/Heading";
+import { Link } from "react-router-dom";
 
 const WhoWeAre = ({ button }) => {
   return (
@@ -32,7 +33,9 @@ const WhoWeAre = ({ button }) => {
             </p>
             {button ? (
               <div className="button">
-                <button>about us</button>
+                <Link to="/about" className="btn_1">
+                  about us
+                </Link>
               </div>
             ) : (
               <div className="footer" data-aos="zoom-in">
