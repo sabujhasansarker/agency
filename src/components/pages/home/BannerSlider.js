@@ -43,17 +43,21 @@ const BannerSlider = () => {
       <Slider {...settings}>
         {sliderItem.map((slider) => (
           <div className="slider" key={slider.id}>
-            <img src={slider.banner} alt="" className="banner_slider_img" />
-            <div className="slider_content">
-              <img src={slider.icon} alt="" className="icon" />
-              <h2>
-                {slider.text.split("<br>").map((s, index) => (
-                  <Fragment key={index}>
-                    {s} <br />
-                  </Fragment>
-                ))}
-              </h2>
-              <button className="btn">Read more</button>
+            <div
+              className="slider_container"
+              style={{ backgroundImage: `url(${slider.banner})` }}
+            >
+              <div className="slider_content">
+                <img src={slider.icon} alt="" className="icon" />
+                <h2>
+                  {slider.text.split("<br>").map((s, index) => (
+                    <Fragment key={index}>
+                      {s} <br />
+                    </Fragment>
+                  ))}
+                </h2>
+                <button className="btn">Read more</button>
+              </div>
             </div>
           </div>
         ))}

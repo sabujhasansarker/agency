@@ -14,12 +14,13 @@
 .banner_slider {
   width: 100%;
   overflow: hidden;
-  min-height: 140vh;
-
-  img.banner_slider_img {
-    position: relative;
+  .slider_container {
     min-height: 140vh;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 78%;
+    background-position: center;
+    background-size: cover;
+    background-position: 76% 100%;
   }
   .slider_content {
     position: absolute;
