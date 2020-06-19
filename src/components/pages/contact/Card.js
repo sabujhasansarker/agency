@@ -13,14 +13,14 @@ const Card = () => {
           </p>
         </div>
         <div className="card_item button">
-          <img src={require("../../../image/location.png")} alt="" />
+          <img src={require("../../../image/phone.png")} alt="" />
           <h4>Phone Number</h4>
           <p>
             +8801948256275 <br /> +8801948256275
           </p>
         </div>
         <div className="card_item button">
-          <img src={require("../../../image/location.png")} alt="" />
+          <img src={require("../../../image/email.png")} alt="" />
           <h4>Email Address</h4>
           <p>
             info@example.com <br /> info@example.com
