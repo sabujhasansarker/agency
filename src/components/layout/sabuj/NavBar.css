@@ -4,6 +4,7 @@
   background: #282828;
   padding: 10px 0px;
   transition: 1s all;
+  z-index: 999999;
 }
 nav {
   padding: 40px 0px;
