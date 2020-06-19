@@ -153,13 +153,18 @@ p:focus {
 .exp_slide_container {
   padding-top: 40px;
 }
-.exp_slide_container .exp_count h4 {
+.about_skill h4,
+.home_exp h4 {
   font-family: Anton;
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 5px;
 }
 
+.count_number {
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
 .count_number p {
   margin: 0;
 }

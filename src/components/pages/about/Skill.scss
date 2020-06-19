@@ -3,24 +3,27 @@
     @content;
   }
 }
-.home_exp {
+.about_skill {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 100px 0;
+  width: 100%;
   @include tablet() {
     display: block;
     width: 90%;
     margin: 0 auto;
   }
-  .home_exp_left {
-    background: url(../../../image/exp.jpeg) 212% 0%;
+  .skill_left {
+    background: url(../../../image/skill.jpeg) 0% 0%;
     background-repeat: no-repeat;
     @include tablet() {
       display: none;
     }
   }
-  .exp_content {
+  .skill_content {
     width: 70%;
+    padding-top: 215px;
+    padding-bottom: 105px;
+    padding-left: 8%;
     @include tablet() {
       width: unset;
     }
