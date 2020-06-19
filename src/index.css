@@ -149,6 +149,67 @@ p:focus {
   outline: none !important;
 }
 
+/* * exp * */
+.exp_slide_container {
+  padding-top: 40px;
+}
+.exp_slide_container .exp_count h4 {
+  font-family: Anton;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.count_number p {
+  margin: 0;
+}
+.count_number [data-aos="exp_count_exm"] {
+  width: 0;
+  opacity: 0;
+  transition-property: width, opacity;
+}
+.count_number .line_container {
+  width: 100%;
+  overflow: hidden;
+  height: 5px;
+  background: #e4e4e4;
+}
+.count_number .line {
+  height: 100%;
+  background: #fddd6c;
+}
+
+.count_number .line.aos-animate {
+  opacity: 1;
+}
+.count_number .line_60.aos-animate {
+  width: 60%;
+}
+.count_number .line_80.aos-animate {
+  width: 80%;
+}
+.count_number .line_90.aos-animate {
+  width: 90%;
+}
+
+.count_number [data-aos="exp_count_margin"] {
+  margin-left: 0;
+  opacity: 0;
+  transition-property: margin-left, opacity;
+}
+
+.count_number p.margin {
+  opacity: 1;
+}
+.count_number p.margin_80.margin.aos-init.aos-animate {
+  margin-left: 80%;
+}
+.count_number p.margin_60.margin.aos-init.aos-animate {
+  margin-left: 60%;
+}
+.count_number p.margin_90.margin.aos-init.aos-animate {
+  margin-left: 90%;
+}
 /* * grid * */
 
 .container {

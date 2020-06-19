@@ -8,6 +8,7 @@ import Card from "../../layout/sabuj/Card";
 import Testimonials from "../../layout/sabuj/Testimonials";
 import CallUs from "./CallUs";
 import Count from "./Count";
+import Experience from "./Experience";
 
 const HomeIndex = () => {
   return (
@@ -16,6 +17,7 @@ const HomeIndex = () => {
       <Card />
       <WhoWeAre />
       <Count />
+      <Experience />
       <CallUs />
       <Testimonials background={true} />
       <Work />
