@@ -72,4 +72,13 @@
       color: #fddd6c;
     }
   }
+  @media (max-width: 300px) {
+    .btn_1 {
+      padding: 20px;
+    }
+    .button:hover::before {
+      left: 5px;
+      top: 5px;
+    }
+  }
 }
