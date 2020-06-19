@@ -33,30 +33,27 @@ span {
   background-color: rgba(0, 0, 0, 0.5);
   filter: alpha(opacity=50);
   color: #ffffff;
-  transition: all 500ms;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   text-align: center;
   z-index: 1050;
-  transform: scale(1);
   opacity: 0.5;
   align-items: center;
   justify-content: center;
   display: flex;
 }
-a.exit_arrow.aos-animate {
+a.exit_arrow {
   width: 0px;
   height: 0px;
   transition: 1s all;
+  transform: scale(0);
 }
 a.arrow_top.arrow.aos-animate {
   width: 60px;
   height: 60px;
-  display: flex;
+  transform: scale(1);
   transition: 1s all;
 }
-a.exit_arrow.aos-animate svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
+a.exit_arrow svg.svg-inline--fa.fa-arrow-up.fa-w-14 {
   width: 0;
   transition: 1s all;
 }
