@@ -104,3 +104,7 @@ nav .logo_img {
     padding: 15px 0px;
   }
 }
+
+.active {
+  border-bottom: 3px solid #fddd6c;
+}
