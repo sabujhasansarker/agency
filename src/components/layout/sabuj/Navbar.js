@@ -18,7 +18,7 @@ const Navbar = () => {
     return history.listen((location) => {
       setActiveItem(location.pathname);
     });
-  }, []);
+  }, [history]);
 
   const hendelClick = (value) => {
     setActiveItem(value);
@@ -28,8 +28,13 @@ const Navbar = () => {
     <nav className={`${state && "fixed_nav"}`}>
       <div className="nav_container">
         <Link to="/" onClick={() => hendelClick("/")}>
-          <img
+          {/* <img
             src="https://demo30.atiframe.com/wp-content/uploads/2020/03/Logo_Samura.svg"
+            alt=""
+            className="logo_img"
+          /> */}
+          <img
+            src={require("../../../image/Logo_Samura.svg")}
             alt=""
             className="logo_img"
           />

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-3 col-sm-6">
             <img
-              src="https://demo30.atiframe.com/wp-content/uploads/2020/03/Logo_Samura.svg"
+              src={require("../../../image/Logo_Samura.svg")}
               alt=""
               className="footer_img"
             />
